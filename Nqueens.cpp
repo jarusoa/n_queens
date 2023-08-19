@@ -27,7 +27,7 @@ void printQueens(stack<int> q, int n){
 // it achieves this by printing a "." if its not the number of the top of stack and print "x" if it is, creating a chess row with a x for the queen piece
 void printRow(stack<int> q,int n){
         int sum = n;
-        for(int i = 0; i < sum; i++){
+        for(int i = 1; i < sum + 1; i++){
             if(i == q.top()){
                 cout << " x";
                 
