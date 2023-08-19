@@ -27,7 +27,7 @@ void printQueens(stack<int> q, int n){
 // it achieves this by printing a "." if its not the number of the top of stack and print "x" if it is, creating a chess row with a x for the queen piece
 void printRow(stack<int> q,int n){
         int sum = n;
-        for(int i = 1; i < sum + 1; i++){
+        for(int i = 0; i < sum; i++){
             if(i == q.top()){
                 cout << " x";
                 
@@ -42,7 +42,7 @@ void printRow(stack<int> q,int n){
 // printBoard serves to print the whole chessboard
 // it acheives this by constanly printing the chess board row with printRow and popping off the top of the stack until there are no elements in the stack
 void printBoard(stack<int> q, int n){
-    for(int o = 0; o < n; o++){
+    for(int i = 0; i < n; i++){
         printRow(q,n);
         q.pop();
         cout << "\n";
